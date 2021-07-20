@@ -28,9 +28,9 @@ function StaticsBar({ nickname }) {
             setLeagueInfo(infos)
             setBgTheme(infos.soloq.tier)
             setMastery(infos.mastery)
-            setLoading(false)
-
-        }).catch(err => { setError({ error: err }) })
+    
+        }).catch(err => { setError({ error: err }) }).finally(() => setLoading(false))
+        
         window.addEventListener("scroll", handleScroll)
 
         return () => window.removeEventListener('scroll', handleScroll)
