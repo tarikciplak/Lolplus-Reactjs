@@ -8,5 +8,3 @@ https://user-images.githubusercontent.com/48831110/127739215-f63c82ee-f484-45e8-
 - TailwindCSS
 - React Router
 - Rest API
-
- 
